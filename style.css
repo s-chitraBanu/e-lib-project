@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: cursive;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    background-color: purple;
+    padding: 10px;
+}
+
+.containers {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-flow: none;
+    flex-wrap: wrap;
+}
+
+.bookcontainer {
+    background-color: rgb(196, 125, 196);
+    border-radius: 20px;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+}
+
+.bookcontainer h2 {
+    color: purple;
+}
+
+.bookcontainer button {
+    background-color: rgb(241, 75, 102);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+}
+
+.addbtn {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgb(196, 125, 196);
+    font-size: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: purple;
+    z-index: 1;
+}
+
+.blurpopupbox {
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    opacity: 60%;
+    display: none;
+}
+
+.popupbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: purple;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 30%;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 20px;
+    display: none;
+    z-index: 2;
+}
+
+.popupbox h2 {
+    color: black;
+}
+
+.popupbox input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+.popupbox textarea {
+    width: 100%;
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+.popupbox button {
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    border: none;
+}
+
+.popupbox input::placeholder {
+    color: beige;
+}
+
+.popupbox textarea::placeholder {
+    color: beige;
+}
+
+.popupbox input:focus {
+    outline: none;
+}
+
+.popupbox textarea:focus {
+    outline: none;
+}
+
+@media screen and (max-width:400px) {
+    .popupbox {
+        top: 20%;
+        left: 15%;
+        width: 50%;
+    }
+}

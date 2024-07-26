@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>E-Lib</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>E-Lib</h1>
+    </div>
+
+    <div class="containers">
+        <div class="bookcontainer">
+            <h2>dairy day</h2>
+            <h5>hendry</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate tenetur quos qui modi
+                consequatur aut mollitia tempore aliquam eum voluptatibus voluptates accusamus facilis harum adipisci
+                praesentium dicta, reiciendis natus soluta laboriosam! Inventore voluptatem velit incidunt repellat ea,
+                ex fugiat?</p>
+            <button onclick="del(event)">delete</button>
+        </div>
+    </div>
+
+    <div class="blurpopupbox">
+    </div>
+
+    <div class="popupbox">
+        <form>
+            <h2>Add Details</h2>
+            <input type="text" placeholder="Book Name" id="bookname">
+            <input type="text" placeholder="Author" id="authorname">
+            <textarea placeholder="Short discription" id="textdiscp"></textarea>
+            <button id="cancelpopbtn">Cancel</button>
+            <button id="addpopbtn">Add</button>
+        </form>
+    </div>
+
+    <button class="addbtn" id="addbutn">+</button>
+
+    <script src="books.js"></script>
+
+</body>
+
+</html>
